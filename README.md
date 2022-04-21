@@ -12,7 +12,8 @@ To train detectron2 we need to follow these steps: <br />
   The training curves are visualised using tensorboard: <br />
   ![plot1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/1.png)
   ![plot2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/2.png)
-  ![plot3](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/3.png)
+  ![plot3](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/3.png) <br />
+  You can download the trained model from [Google Drive](https://drive.google.com/file/d/1ltLQukzgkEOC6fNUAbrTHrWyag7R7bbM/view?usp=sharing) <br />
 4. Inference using the trained model <br />
   Here are some results: <br />
   ![Res1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/t%C3%A9l%C3%A9chargement%20(3).png)
