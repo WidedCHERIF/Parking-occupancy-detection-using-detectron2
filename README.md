@@ -23,7 +23,7 @@ To train detectron2 we need to follow these steps: <br />
   We get an accuracy of around **94.69%** for an IoU of 0.5 and around **88.93%** for an IoU of 0.75 which is not bad! <br />
   ![Eval](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/4.png)
   
-###### Dependences 
+## Dependences 
 python>=3.6 <br />
 torch==1.3.0+cu100 <br />
 torchvision==0.4.1+cu100 <br />
@@ -44,8 +44,8 @@ python demo.py
 ```
 python train.py
 ```
-<br />
-Please check [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14y3ThHeopbAJLiQymn9Z9GLFP-l2sw04?usp=sharing)  for other application of detectron2 (training a balloon segmentation model). 
+
+Please check [Colab](https://colab.research.google.com/drive/14y3ThHeopbAJLiQymn9Z9GLFP-l2sw04?usp=sharing)  for other application of detectron2 (training a balloon segmentation model). 
 
  
 
