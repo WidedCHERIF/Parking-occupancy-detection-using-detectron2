@@ -19,7 +19,7 @@ To train detectron2 we need to follow these steps: <br />
   ![Res2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/t%C3%A9l%C3%A9chargement%20(4).png) <br />
   ![Res3](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/t%C3%A9l%C3%A9chargement%20(5).png) <br />
   Usually, the model is evaluated following the COCO Standards of evaluation. Mean Average Precision (mAP) is used to evaluate the performance of the model. <br />
-  We get an accuracy of around 94.69% for an IoU of 0.5 and around 88.93% for an Iou of 0.75 which is not bad! <br />
+  We get an accuracy of around **94.69%** for an IoU of 0.5 and around **88.93%** for an IoU of 0.75 which is not bad! <br />
   ![Eval](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/4.png)
   
  
