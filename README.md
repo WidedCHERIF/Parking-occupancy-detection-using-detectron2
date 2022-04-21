@@ -45,7 +45,7 @@ python demo.py
 python train.py
 ```
 <br />
-Please check [Colab](https://colab.research.google.com/drive/14y3ThHeopbAJLiQymn9Z9GLFP-l2sw04?usp=sharing#scrollTo=Jc6Q3IPDL4x) for other application of detectron2 (training a balloon segmentation model). 
+Please check ![Colab](https://colab.research.google.com/drive/14y3ThHeopbAJLiQymn9Z9GLFP-l2sw04?usp=sharing#scrollTo=Jc6Q3IPDL4x) for other application of detectron2 (training a balloon segmentation model). 
 
  
 
