@@ -34,18 +34,18 @@ scikit-image <br />
 numpy <br />
 opencv-python <br />
 pycocotools <br />
-###### Model
+## Model
 Please dowload from [Google Drive](https://drive.google.com/file/d/1ltLQukzgkEOC6fNUAbrTHrWyag7R7bbM/view?usp=sharing) <br />
-###### Demo
+## Demo
 ```
 python demo.py
 ```
-###### Train
+## Train
 ```
 python train.py
 ```
 <br />
-Please check ![Colab](https://colab.research.google.com/drive/14y3ThHeopbAJLiQymn9Z9GLFP-l2sw04?usp=sharing#scrollTo=Jc6Q3IPDL4x) for other application of detectron2 (training a balloon segmentation model). 
+Please check [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14y3ThHeopbAJLiQymn9Z9GLFP-l2sw04?usp=sharing)  for other application of detectron2 (training a balloon segmentation model). 
 
  
 
