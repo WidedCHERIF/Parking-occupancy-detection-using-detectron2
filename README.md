@@ -13,7 +13,7 @@ To train detectron2 we need to follow these steps: <br />
   ![plot1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/1.png)
   ![plot2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/2.png)
   ![plot3](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/3.png) <br />
-  You can download the trained model from [Google Drive](https://drive.google.com/file/d/1ltLQukzgkEOC6fNUAbrTHrWyag7R7bbM/view?usp=sharing) <br />
+  You can download the trained model from 
 4. Inference using the trained model <br />
   Here are some results: <br />
   ![Res1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/t%C3%A9l%C3%A9chargement%20(3).png)
@@ -23,6 +23,30 @@ To train detectron2 we need to follow these steps: <br />
   We get an accuracy of around **94.69%** for an IoU of 0.5 and around **88.93%** for an IoU of 0.75 which is not bad! <br />
   ![Eval](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/4.png)
   
+###### Dependences 
+python>=3.6 <br />
+torch==1.3.0+cu100 <br />
+torchvision==0.4.1+cu100 <br />
+tensorboard <br />
+cython <br />
+jupyter <br />
+scikit-image <br />
+numpy <br />
+opencv-python <br />
+pycocotools <br />
+###### Model
+Please dowload from [Google Drive](https://drive.google.com/file/d/1ltLQukzgkEOC6fNUAbrTHrWyag7R7bbM/view?usp=sharing) <br />
+###### Demo
+```
+python demo.py
+```
+###### Train
+```
+python train.py
+```
+<br />
+Please check [Colab](https://colab.research.google.com/drive/14y3ThHeopbAJLiQymn9Z9GLFP-l2sw04?usp=sharing#scrollTo=Jc6Q3IPDL4x) for other application of detectron2 (training a balloon segmentation model). 
+
  
 
 
