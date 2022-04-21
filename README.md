@@ -5,15 +5,15 @@ In this repository, we are going to deal with identifying empty and occupied par
 ![model](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/image.png)
  <br />
 To train detectron2 we need to follow these steps: <br />
-1. Installing detectron2 
-2. Preparing and registering the dataset
+1. Installing detectron2 <br />
+2. Preparing and registering the dataset <br />
   For our case, we are using [PKLot dataset](https://public.roboflow.com/object-detection/pklot) and we got it in a coco format from [Roboflow](https://public.roboflow.com/object-detection/pklot/1/download/coco) <br />
-3. Training the model
+3. Training the model <br />
   The training curves are visualised using tensorboard: <br />
   ![plot1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/1.png)
   ![plot2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/2.png)
   ![plot3](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/3.png)
-4. Inference using the trained model
+4. Inference using the trained model <br />
   Here are some results: <br />
   ![Res1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/t%C3%A9l%C3%A9chargement%20(3).png)
   ![Res2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/t%C3%A9l%C3%A9chargement%20(4).png)
