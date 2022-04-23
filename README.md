@@ -34,16 +34,32 @@ scikit-image <br />
 numpy <br />
 opencv-python <br />
 pycocotools <br />
-## Model
-Please dowload from [Google Drive](https://drive.google.com/file/d/1ltLQukzgkEOC6fNUAbrTHrWyag7R7bbM/view?usp=sharing) <br />
-## Demo
+pyyaml==5.1 <br />
+
+## Install Detectron2
 ```
-python demo.py
+# Install detectron2 that matches the above pytorch version
+# See https://detectron2.readthedocs.io/tutorials/install.html for instructions
+pip install detectron2 
 ```
+## Download Dataset
+```
+cd .\Detection-using-Detectron2
+curl -L "https://public.roboflow.com/ds/gPbookuOTI?key=kfody3xy1u" > roboflow.zip; unzip roboflow.zip; rm roboflow.zip --output /content/sample_data/
+```
+## Trained Model
+Please dowload from [Google Drive](https://drive.google.com/file/d/1ltLQukzgkEOC6fNUAbrTHrWyag7R7bbM/view?usp=sharing) and put in  .\Detection-using-Detectron2 <br />
+
 ## Train
 ```
-python train.py
+python Pklot.py --mode train
 ```
+
+## Test
+```
+python Pklot.py --mode test
+```
+
 
 Please check [Colab](https://colab.research.google.com/drive/14y3ThHeopbAJLiQymn9Z9GLFP-l2sw04?usp=sharing)  for other application of detectron2 (training a balloon segmentation model). 
 
