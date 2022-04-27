@@ -9,6 +9,7 @@ To train detectron2 we need to follow these steps: <br />
 2. Prepare and register the dataset <br />
   For our case, we are using [PKLot dataset](https://public.roboflow.com/object-detection/pklot). The dataset is downloaded in a coco format from [Roboflow](https://public.roboflow.com/object-detection/pklot/1/download/coco) <br />
 3. Train the model <br />
+  Training is done on GPU. It takes around 1.88 s/iter (around 47 min for the whole training) <br />
   The training curves are visualised using tensorboard: <br />
   ![plot1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/1.png)
   ![plot2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/2.png)
