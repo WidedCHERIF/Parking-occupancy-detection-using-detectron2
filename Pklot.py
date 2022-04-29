@@ -25,6 +25,12 @@ def parse_args():
     parser.add_argument('--mode', dest='mode',
                       help='choose to train or to test',
                       default='train', type=str)
+    parser.add_argument('--lr', dest='learning_rate', default= '0.0125', type=int)
+    parser.add_argument('--it', dest='max_iteration', default= '1500', type=int)
+    parser.add_argument('--workers', dest='number_of_workers', default= '2', type=int)
+    parser.add_argument('--ims_per_batch', dest='number_of_workers', default= '4', type=int)
+    parser.add_argument('--eval_period', dest='evaluation_period', default= '500', type=int)
+    parser.add_argument('--batch_size', dest='batch_size', default= '256', type=int)
     args = parser.parse_args()
     return args
 
@@ -44,19 +50,20 @@ def visualize_data():
 
 def config():
 
+    args = parse_args()
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"))
     cfg.DATASETS.TRAIN = ("PKLot_train",)
     cfg.DATASETS.TEST = ("PKLot_valid",)
-    cfg.DATALOADER.NUM_WORKERS = 2
+    cfg.DATALOADER.NUM_WORKERS = args.number_of_workers
     cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml")  # Let training initialize from model zoo
-    cfg.SOLVER.IMS_PER_BATCH = 4
-    cfg.SOLVER.BASE_LR = 0.0125 # pick a good LR
-    cfg.SOLVER.MAX_ITER = 1500    # 300 iterations seems good enough for this toy dataset; you will need to train longer for a practical dataset
+    cfg.SOLVER.IMS_PER_BATCH = args.ims_per_batch
+    cfg.SOLVER.BASE_LR = args.learning_rate # pick a good LR
+    cfg.SOLVER.MAX_ITER = args.max_iteration    # 300 iterations seems good enough for this toy dataset; you will need to train longer for a practical dataset
     cfg.SOLVER.STEPS = []        # do not decay learning rate
-    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 256  # faster, and good enough for this toy dataset (default: 512)
+    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = args.batch_size  # faster, and good enough for this toy dataset (default: 512)
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 3 
-    cfg.TEST.EVAL_PERIOD = 500
+    cfg.TEST.EVAL_PERIOD = args.evaluation_period
     return cfg
 
 def train():
