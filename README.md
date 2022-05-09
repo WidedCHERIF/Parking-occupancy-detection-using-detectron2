@@ -1,3 +1,4 @@
+
 # Detection using detectron2 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZNCchcQD1RhbVlKvwKijkYPZiEl9D9W8?usp=sharing) <br />
 **Detectron2** is a framework written on Pytorch that helps training an object detection model in a snap with a custon dataset. It presents multiple models [model zoo](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md) trained on coco dataset so we just need to fine tune our custom dataset on one of the pre-trained model. <br />
@@ -64,4 +65,4 @@ python Pklot.py --mode test
 
 You can also check [Colab](https://colab.research.google.com/drive/14y3ThHeopbAJLiQymn9Z9GLFP-l2sw04?usp=sharing)  for other application of detectron2 (training a balloon segmentation model). 
 
- 
+
