@@ -11,18 +11,18 @@ To train detectron2 we need to follow these steps: <br />
 3. Train the model <br />
   Training is done on GPU. It takes around 1.88 s/iter (around 47 min for the whole training) <br />
   The training curves are visualised using tensorboard: <br />
-  ![plot1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/1.png)
-  ![plot2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/2.png)
-  ![plot3](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/3.png) <br />
+  ![plot1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/Develop/1.png)
+  ![plot2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/Develop/2.png)
+  ![plot3](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/Develop/3.png) <br />
   You can download the trained model from 
 4. Inference using the trained model <br />
   Here are some results: <br />
-  ![Res1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/Res1.png)
-  ![Res2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/Res2.png) <br />
-  ![Res3](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/Res3.png) <br />
+  ![Res1](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/Develop/Res1.png)
+  ![Res2](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/Develop/Res2.png) <br />
+  ![Res3](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/Develop/Res3.png) <br />
   Usually, the model is evaluated following the COCO Standards of evaluation. Mean Average Precision (mAP) is used to evaluate the performance of the model. <br />
   We get an accuracy of around **94.69%** for an IoU of 0.5 and around **88.93%** for an IoU of 0.75 which is not bad! <br />
-  ![Eval](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/test/4.png)
+  ![Eval](https://github.com/WidedCHERIF/Detection-using-Detectron2/blob/Develop/4.png)
   
 ## Dependences 
 python>=3.6 <br />
